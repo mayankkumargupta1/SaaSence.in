@@ -1,6 +1,6 @@
 // src/components/SalesContactForm.tsx
-import Image from 'next/image';
-import { WavyBackground } from './ui/wavy-background'; // Assuming this component is available
+import Image from "next/image";
+import { WavyBackground } from "./ui/wavy-background"; // Assuming this component is available
 
 export function SalesContactForm() {
   return (
@@ -17,32 +17,56 @@ export function SalesContactForm() {
             linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
             linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)
           `,
-            backgroundSize: '48px 48px',
-            backgroundPosition: 'top left',
+            backgroundSize: "48px 48px",
+            backgroundPosition: "top left",
           }}
         ></div>
 
         {/* Corner Crosses (absolute positioning) - Ensure they have z-index to be above the grid */}
         <div className="absolute top-0 left-0 p-4 z-10">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path d="M6 0L6 12" stroke="white" strokeWidth="1" />
             <path d="M0 6L12 6" stroke="white" strokeWidth="1" />
           </svg>
         </div>
         <div className="absolute top-0 right-0 p-4 z-10">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path d="M6 0L6 12" stroke="white" strokeWidth="1" />
             <path d="M0 6L12 6" stroke="white" strokeWidth="1" />
           </svg>
         </div>
         <div className="absolute bottom-0 left-0 p-4 z-10">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path d="M6 0L6 12" stroke="white" strokeWidth="1" />
             <path d="M0 6L12 6" stroke="white" strokeWidth="1" />
           </svg>
         </div>
         <div className="absolute bottom-0 right-0 p-4 z-10">
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path d="M6 0L6 12" stroke="white" strokeWidth="1" />
             <path d="M0 6L12 6" stroke="white" strokeWidth="1" />
           </svg>
@@ -52,13 +76,16 @@ export function SalesContactForm() {
         {/* The 'mx-auto' on this div will center the container that limits the width of the max-w-7xl card. */}
         <div className="relative z-10 w-full px-4 sm:px-8 md:px-12 lg:px-16 mx-auto">
           {/* Main content card: max-width, background, rounded corners, shadow, and grid layout */}
-          <div className="max-w-7xl mx-auto bg-black text-white rounded-lg shadow-2xl overflow-hidden
-                          grid grid-cols-1 md:grid-cols-[1fr_0.8fr] md:gap-12 lg:gap-24">
+          <div
+            className="max-w-7xl mx-auto bg-black text-white rounded-lg shadow-2xl overflow-hidden
+                          grid grid-cols-1 md:grid-cols-[1fr_0.8fr] md:gap-12 lg:gap-24"
+          >
             {/* Left Column - Content */}
             {/* Unified padding for all screen sizes within the column */}
             <div className="p-6 sm:p-8 md:p-10 lg:p-12">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 leading-tight">
-                Connect with our <span className="text-white">Agentic AI Experts.</span>
+                Connect with our{" "}
+                <span className="text-white">Agentic AI Experts.</span>
               </h1>
 
               <div className="space-y-6 mb-8 sm:mb-10 lg:mb-12">
@@ -95,7 +122,11 @@ export function SalesContactForm() {
                     />
                   </svg>
                   <p className="text-base sm:text-lg text-neutral-400">
-                    <span className="font-semibold text-white">Request a personalized demo.</span> See Agentic AI in action and discover how SaaSence.in can transform your operations.
+                    <span className="font-semibold text-white">
+                      Request a personalized demo.
+                    </span>{" "}
+                    See Agentic AI in action and discover how SaaSence.in can
+                    transform your operations.
                   </p>
                 </div>
 
@@ -125,7 +156,11 @@ export function SalesContactForm() {
                     />
                   </svg>
                   <p className="text-base sm:text-lg text-neutral-400">
-                    <span className="font-semibold text-white">Explore custom enterprise solutions.</span> Let's discuss a tailor-made Agentic AI strategy for your unique business needs.
+                    <span className="font-semibold text-white">
+                      Explore custom enterprise solutions.
+                    </span>{" "}
+                    Let's discuss a tailor-made Agentic AI strategy for your
+                    unique business needs.
                   </p>
                 </div>
               </div>
@@ -133,24 +168,37 @@ export function SalesContactForm() {
               {/* Stats Section - Updated for Agentic AI benefits and SaaSence.in */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 my-8 sm:my-10 lg:my-12">
                 <div className="flex flex-col">
-                  <p className="text-3xl sm:text-4xl font-bold text-white">40% reduction</p>
-                  <p className="text-neutral-400 mb-4">in customer service costs.*</p>
+                  <p className="text-3xl sm:text-4xl font-bold text-white">
+                    40% reduction
+                  </p>
+                  <p className="text-neutral-400 mb-4">
+                    in customer service costs.*
+                  </p>
                 </div>
                 <div className="flex flex-col">
-                  <p className="text-3xl sm:text-4xl font-bold text-white">2x faster</p>
-                  <p className="text-neutral-400 mb-4">marketing campaign execution.*</p>
+                  <p className="text-3xl sm:text-4xl font-bold text-white">
+                    2x faster
+                  </p>
+                  <p className="text-neutral-400 mb-4">
+                    marketing campaign execution.*
+                  </p>
                 </div>
               </div>
 
               {/* Quote Section - Updated for Agentic AI and SaaSence.in */}
               <div className="mt-8 pt-8 sm:mt-10 sm:pt-10 lg:mt-12 lg:pt-12 border-t border-neutral-800">
                 <p className="text-lg sm:text-xl font-medium text-neutral-200 mb-4">
-                  "SaaSence's Agentic AI has fundamentally changed our approach to operations, leading to{' '}
-                  <span className="font-bold text-white">unprecedented efficiency and innovation.</span>"
+                  "SaaSence's Agentic AI has fundamentally changed our approach
+                  to operations, leading to{" "}
+                  <span className="font-bold text-white">
+                    unprecedented efficiency and innovation.
+                  </span>
+                  "
                 </p>
               </div>
               <p className="text-xs text-neutral-600 mt-4">
-                *Based on aggregated data from early adopter clients. Individual results may vary.
+                *Based on aggregated data from early adopter clients. Individual
+                results may vary.
               </p>
             </div>
 
@@ -159,7 +207,10 @@ export function SalesContactForm() {
             <div className="p-6 sm:p-8 md:p-10 lg:p-12">
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="companyEmail" className="block text-neutral-200 font-medium mb-2 text-sm sm:text-base">
+                  <label
+                    htmlFor="companyEmail"
+                    className="block text-neutral-200 font-medium mb-2 text-sm sm:text-base"
+                  >
                     Company email
                   </label>
                   <input
@@ -171,7 +222,10 @@ export function SalesContactForm() {
                 </div>
 
                 <div>
-                  <label htmlFor="productInterest" className="block text-neutral-200 font-medium mb-2 text-sm sm:text-base">
+                  <label
+                    htmlFor="productInterest"
+                    className="block text-neutral-200 font-medium mb-2 text-sm sm:text-base"
+                  >
                     Primary Solution Interest
                   </label>
                   <div className="relative">
@@ -179,22 +233,41 @@ export function SalesContactForm() {
                       id="productInterest"
                       className="w-full p-3 rounded-md bg-transparent border border-neutral-700 text-white placeholder-neutral-500 appearance-none pr-10 focus:outline-none focus:ring-1 focus:ring-blue-500 ring-1 ring-inset ring-neutral-800 text-sm sm:text-base"
                     >
-                      <option value="" disabled selected className="bg-neutral-900 text-neutral-500">
+                      <option
+                        value=""
+                        disabled
+                        className="bg-neutral-900 text-neutral-500"
+                      >
                         Select a solution area
                       </option>
-                      <option value="customer_service_ai" className="bg-neutral-900 text-white">
+                      <option
+                        value="customer_service_ai"
+                        className="bg-neutral-900 text-white"
+                      >
                         Customer Service AI (SaaSence CX)
                       </option>
-                      <option value="marketing_ai" className="bg-neutral-900 text-white">
+                      <option
+                        value="marketing_ai"
+                        className="bg-neutral-900 text-white"
+                      >
                         Marketing Automation AI (SaaSence Marketing)
                       </option>
-                      <option value="hr_ai" className="bg-neutral-900 text-white">
+                      <option
+                        value="hr_ai"
+                        className="bg-neutral-900 text-white"
+                      >
                         HR & Recruitment AI (SaaSence HR)
                       </option>
-                      <option value="custom_enterprise_solution" className="bg-neutral-900 text-white">
+                      <option
+                        value="custom_enterprise_solution"
+                        className="bg-neutral-900 text-white"
+                      >
                         Custom Enterprise AI Solution
                       </option>
-                      <option value="general_inquiry" className="bg-neutral-900 text-white">
+                      <option
+                        value="general_inquiry"
+                        className="bg-neutral-900 text-white"
+                      >
                         General Inquiry about Agentic AI
                       </option>
                     </select>
@@ -212,7 +285,10 @@ export function SalesContactForm() {
                 </div>
 
                 <div>
-                  <label htmlFor="howCanWeHelp" className="block text-neutral-200 font-medium mb-2 text-sm sm:text-base">
+                  <label
+                    htmlFor="howCanWeHelp"
+                    className="block text-neutral-200 font-medium mb-2 text-sm sm:text-base"
+                  >
                     How can we help?
                   </label>
                   <textarea
@@ -224,8 +300,12 @@ export function SalesContactForm() {
                 </div>
 
                 <p className="text-xs text-neutral-500 mt-6 sm:mt-8">
-                  By clicking "Talk to SaaSence", I acknowledge I have read and understand the{' '}
-                  <a href="/privacy-notice" className="text-blue-500 hover:underline">
+                  By clicking "Talk to SaaSence", I acknowledge I have read and
+                  understand the{" "}
+                  <a
+                    href="/privacy-notice"
+                    className="text-blue-500 hover:underline"
+                  >
                     Privacy Notice.
                   </a>
                 </p>

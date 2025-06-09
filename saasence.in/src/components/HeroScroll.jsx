@@ -15,7 +15,8 @@ export function HeroScroll() {
               </span>
             </h1>
           </>
-        }>
+        }
+      >
         <video
           src="/bot.mp4" // replace with your video path
           autoPlay

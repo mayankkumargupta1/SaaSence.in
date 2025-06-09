@@ -29,7 +29,7 @@ export const useGlobal = (key, options = {}) => {
     })();
 
     return () => unsub?.();
-  }, [key, defaultValue]);
+  }, [key, defaultValue, retain]);
 
   const setGlobal = (val) => {
     if (retain) {

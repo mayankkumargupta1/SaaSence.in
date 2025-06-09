@@ -30,7 +30,9 @@ export function Hero() {
       <div className="sticky top-0  flex flex-col items-center justify-center px-4 sm:px-2 lg:px-16 ">
         <GoogleGeminiEffect
           title={"Unleash Autonomous Intelligence."}
-          description={"The future of work isn’t manual—it’s autonomous. SaaSence empowers businesses with AI agents that deliver results across every department, without human micromanagement."}
+          description={
+            "The future of work isn’t manual—it’s autonomous. SaaSence empowers businesses with AI agents that deliver results across every department, without human micromanagement."
+          }
           pathLengths={[
             pathLengthFirst,
             pathLengthSecond,
@@ -43,3 +45,4 @@ export function Hero() {
     </div>
   );
 }
+

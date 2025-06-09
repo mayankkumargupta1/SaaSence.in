@@ -3,7 +3,7 @@ import {
   MdOutlineImage,
   MdOutlineInsertDriveFile,
   MdOutlineVideocam,
-  MdFolder
+  MdFolder,
 } from "react-icons/md";
 import { LuWebhook } from "react-icons/lu";
 import { FaCube } from "react-icons/fa";
@@ -16,7 +16,9 @@ const Card = ({ icon, title, description, children }) => (
       <span className="mr-3 text-[#8B05FF] text-2xl">{icon}</span>
       <h3 className="text-xl font-semibold text-white">{title}</h3>
     </div>
-    <p className="text-sm text-gray-400 mb-6 flex-grow leading-relaxed">{description}</p>
+    <p className="text-sm text-gray-400 mb-6 flex-grow leading-relaxed">
+      {description}
+    </p>
     <div className="flex-grow flex flex-col justify-end">{children}</div>
   </div>
 );
@@ -55,21 +57,47 @@ const RealtimeCardContent = () => (
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#2A2A2A] rounded-full w-20 h-10 flex items-center justify-center text-gray-400 text-2xl z-10">
       ...
     </div>
-    <svg className="absolute top-1/4 left-1/4 w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12.4468 18.0673L12.4468 23.3642L15.3524 16.582L23.7547 16.582L0 0L12.4468 18.0673Z" fill="#D1D5DB" />
+    <svg
+      className="absolute top-1/4 left-1/4 w-8 h-8"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path
+        d="M12.4468 18.0673L12.4468 23.3642L15.3524 16.582L23.7547 16.582L0 0L12.4468 18.0673Z"
+        fill="#D1D5DB"
+      />
     </svg>
-    <svg className="absolute bottom-1/4 right-1/4 w-8 h-8 rotate-180" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12.4468 18.0673L12.4468 23.3642L15.3524 16.582L23.7547 16.582L0 0L12.4468 18.0673Z" fill="#D1D5DB" />
+    <svg
+      className="absolute bottom-1/4 right-1/4 w-8 h-8 rotate-180"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path
+        d="M12.4468 18.0673L12.4468 23.3642L15.3524 16.582L23.7547 16.582L0 0L12.4468 18.0673Z"
+        fill="#D1D5DB"
+      />
     </svg>
   </div>
 );
 
 const VectorCardContent = () => (
   <div className="relative w-full h-48 flex items-center justify-center">
-    <svg className="w-full h-full max-w-[150px] max-h-[150px] my-6" viewBox="0 0 100 100" fill="none">
-      <path d="M50 0L100 25L50 50L0 25L50 0Z" stroke="#4B5563" strokeWidth="1.5" />
+    <svg
+      className="w-full h-full max-w-[150px] max-h-[150px] my-6"
+      viewBox="0 0 100 100"
+      fill="none"
+    >
+      <path
+        d="M50 0L100 25L50 50L0 25L50 0Z"
+        stroke="#4B5563"
+        strokeWidth="1.5"
+      />
       <path d="M0 25L50 50V100L0 75V25Z" stroke="#4B5563" strokeWidth="1.5" />
-      <path d="M100 25L50 50V100L100 75V25Z" stroke="#4B5563" strokeWidth="1.5" />
+      <path
+        d="M100 25L50 50V100L100 75V25Z"
+        stroke="#4B5563"
+        strokeWidth="1.5"
+      />
       <circle cx="20" cy="30" r="2" fill="#34D399" />
       <circle cx="70" cy="15" r="2" fill="#3B82F6" />
       <circle cx="85" cy="50" r="2" fill="#6B7280" />
@@ -117,7 +145,7 @@ const DataAPIsCardContent = () => {
         { name: "cities", path: "cities" },
         { name: "states", path: "states" },
         { name: "country_codes", path: "country_codes" },
-        { name: "oceans", path: "oceans" }
+        { name: "oceans", path: "oceans" },
       ].map((item, idx) => (
         <ApiItem key={idx} {...item} />
       ))}
@@ -152,11 +180,11 @@ export default function Cards() {
         >
           <VectorCardContent />
         </Card>
-
       </div>
 
       <p className="text-gray-400 text-lg text-center mt-12">
-        Use the modules you need. <span className="font-bold text-white">SaaSence is plug-and-play.</span>
+        Use the modules you need.{" "}
+        <span className="font-bold text-white">SaaSence is plug-and-play.</span>
       </p>
     </div>
   );
