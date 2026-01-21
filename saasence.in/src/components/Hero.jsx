@@ -17,7 +17,7 @@ export function Hero() {
 
   return (
     <div
-      className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative overflow-clip"
+      className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] relative overflow-clip"
       ref={ref}
     >
       {/* 
@@ -45,4 +45,3 @@ export function Hero() {
     </div>
   );
 }
-
