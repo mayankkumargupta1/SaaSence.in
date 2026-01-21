@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+
+/* Base Body Styling (what it looks like when fully visible) */
+body {
+  /* Transition properties - KEEP AS IS */
+  transition-property: opacity, transform, filter, background;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+
+  /* Default visible state */
+}
+
+/* This class defines the "hidden" or "off-screen" state */
+.page-transition-complex {
+  opacity: 0;
+  transform: translateX(100%) scale(0.8) rotate(15deg); /* Slide, shrink, and rotate */
+  filter: blur(10px);
+  background: black;
+}
