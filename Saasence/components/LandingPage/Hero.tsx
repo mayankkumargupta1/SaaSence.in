@@ -31,7 +31,7 @@ export function Hero() {
 
   return (
     <motion.div
-      className="h-[400vh] w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip bg-gradient-to-br from-black via-violet-950/80 to-rose-950/80"
+      className="h-[400vh] w-full dark:border dark:border-white/[0.1] relative pt-40 overflow-clip bg-gradient-to-br from-black via-violet-950/80 to-rose-950/80"
       ref={ref}
       initial="hidden"
       animate="visible"

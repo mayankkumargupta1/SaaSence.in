@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const MODEL_NAME = "gemini-2.0-flash";
-const API_KEY = "AIzaSyDIwwW4ApVM7Dsj7BuCq4766eCWcOW9_mM";
+// const API_KEY = "AIzaSyDIwwW4ApVM7Dsj7BuCq4766eCWcOW9_mM";
+const API_KEY = process.env.NEXT_PRIVATE_GEMINI_API_KEY;
 const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${API_KEY}`;
 
 const SYSTEM_INSTRUCTION = `You are Anya, the Agentic AI Guide for SaaSence.in, with the tagline "Your Agentic AI Guide, Always Ready to Help!" You are a warm, professional, and futuristic AI assistant designed to help users with all inquiries about SaaSence products, services, and Agentic AI solutions.
