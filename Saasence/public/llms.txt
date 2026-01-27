@@ -1,0 +1,74 @@
+# SaaSence.in - Agentic AI Solutions
+
+> Empowering Businesses with Agentic AI Solutions
+
+## About SaaSence
+
+SaaSence.in is an AI-powered SaaS company that transforms business operations through Agentic AI technology. We provide autonomous, intelligent solutions for customer service, marketing automation, and HR management.
+
+## Contact Information
+
+- **Email**: contact@saasence.in
+- **Phone**: +91 9142572977
+- **Website**: https://saasence.in
+
+## Our Products & Services
+
+### Customer Service AI (SaaSence CX)
+Autonomous AI-powered customer support that handles inquiries, resolves issues, and provides 24/7 assistance without human intervention.
+
+### Marketing Automation AI (SaaSence Marketing)
+Intelligent marketing automation that creates, optimizes, and manages marketing campaigns using advanced AI algorithms.
+
+### HR & Recruitment AI (SaaSence HR)
+AI-driven human resources and recruitment tools that streamline hiring, onboarding, and employee management processes.
+
+### Custom Enterprise AI Solutions
+Bespoke Agentic AI solutions designed specifically for enterprise-level businesses with unique operational requirements.
+
+## Key Features
+
+- **Agentic AI Technology**: Our AI agents operate autonomously, making decisions and taking actions without constant human oversight.
+- **Seamless Integration**: Our solutions integrate easily with existing business systems and workflows.
+- **24/7 Availability**: AI-powered services that never sleep, ensuring continuous business operations.
+- **Scalable Solutions**: From startups to enterprises, our AI scales with your business needs.
+- **Data Security**: Enterprise-grade security protecting your business data.
+
+## Technology Stack
+
+We leverage cutting-edge AI technologies including:
+- Large Language Models (LLMs)
+- Natural Language Processing (NLP)
+- Machine Learning (ML)
+- Autonomous Agent Systems
+
+## Industries We Serve
+
+- E-commerce & Retail
+- Healthcare
+- Finance & Banking
+- Technology & SaaS
+- Education
+- Manufacturing
+
+## Getting Started
+
+1. **Contact Us**: Reach out via our contact form or email contact@saasence.in
+2. **Personalized Demo**: Schedule a demo to see our AI solutions in action
+3. **Custom Implementation**: Work with our team to implement tailored AI solutions
+4. **Go Live**: Launch your AI-powered business transformation
+
+## Links
+
+- Homepage: https://saasence.in
+- Privacy Policy: https://saasence.in/privacy-policy
+- Terms of Service: https://saasence.in/terms-of-service
+
+## Social Media
+
+- Twitter: @saasencein
+- LinkedIn: https://linkedin.com/company/saasence
+
+---
+
+*This file is designed to provide AI assistants and LLMs with structured information about SaaSence.in*

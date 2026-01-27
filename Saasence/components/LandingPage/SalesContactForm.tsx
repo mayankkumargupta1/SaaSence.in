@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { Phone, MessageSquareText, Users, ArrowRight } from "lucide-react";
+import { Phone, MessageSquareText, Users, ArrowRight, Mail } from "lucide-react";
 import { WavyBackground } from "../ui/wavy-background";
 import { useRef } from "react";
 
@@ -355,6 +355,48 @@ export function SalesContactForm() {
                   <ArrowRight size={20} className="inline ml-2 -mt-0.5" />
                 </motion.button>
               </form>
+
+              {/* Direct Contact Section */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="mt-8 pt-6 border-t border-slate-700/50"
+              >
+                <h3 className="text-base font-semibold text-slate-200 mb-4">
+                  Reach Out Directly
+                </h3>
+                <div className="flex flex-col gap-3">
+                  <a
+                    href="mailto:contact@saasence.in"
+                    className="group flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r from-slate-700/60 to-slate-600/40 border border-slate-600/50 hover:border-purple-500/60 hover:from-slate-700/80 hover:to-purple-900/30 transition-all duration-300"
+                  >
+                    <div className="flex-shrink-0 w-9 h-9 bg-purple-500/20 rounded-lg flex items-center justify-center group-hover:bg-purple-500/30 transition-colors">
+                      <Mail size={18} className="text-purple-400" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-400">Email</p>
+                      <p className="text-sm font-medium text-slate-100 group-hover:text-purple-300 transition-colors">
+                        contact@saasence.in
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    href="tel:+919142572977"
+                    className="group flex items-center gap-3 px-4 py-3 rounded-xl bg-gradient-to-r from-slate-700/60 to-slate-600/40 border border-slate-600/50 hover:border-purple-500/60 hover:from-slate-700/80 hover:to-purple-900/30 transition-all duration-300"
+                  >
+                    <div className="flex-shrink-0 w-9 h-9 bg-purple-500/20 rounded-lg flex items-center justify-center group-hover:bg-purple-500/30 transition-colors">
+                      <Phone size={18} className="text-purple-400" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-400">Phone</p>
+                      <p className="text-sm font-medium text-slate-100 group-hover:text-purple-300 transition-colors">
+                        +91 9142572977
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </motion.div>
             </motion.div>
           </motion.div>
         </div>

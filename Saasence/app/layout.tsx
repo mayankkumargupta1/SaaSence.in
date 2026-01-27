@@ -95,6 +95,8 @@ export default function RootLayout({
               ],
               contactPoint: {
                 "@type": "ContactPoint",
+                email: "contact@saasence.in",
+                telephone: "+91-9142572977",
                 contactType: "customer service",
                 availableLanguage: "English",
               },
